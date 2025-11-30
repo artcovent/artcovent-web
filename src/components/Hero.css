@@ -1,0 +1,118 @@
+.hero {
+    position: relative;
+    width: 100%;
+    /* 높이 자동 조절 (최소화) */
+    height: auto;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    /* 배경 이미지 제거 및 따뜻한 단색 배경 적용 */
+    background-image: none;
+    background-color: #FFF0E6;
+    /* 헤더 높이만큼 상단 여백 + 추가 여백 */
+    padding-top: calc(var(--header-height) + 3rem);
+    padding-bottom: 3rem;
+    font-family: 'Omyu Pretty', 'Noto Sans KR', sans-serif;
+}
+
+/* 오버레이 제거 */
+.hero-overlay {
+    display: none;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 800px;
+    /* 중앙 정렬 */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-subtitle {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    /* 텍스트 그림자 제거 */
+    text-shadow: none;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    /* 폰트 사이즈 약간 축소 */
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    color: var(--color-text-main);
+    /* 텍스트 그림자 제거 */
+    text-shadow: none;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+    /* 텍스트 그림자 제거 */
+    text-shadow: none;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    /* 버튼 중앙 정렬 */
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: calc(var(--header-height) + 2rem);
+        padding-bottom: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

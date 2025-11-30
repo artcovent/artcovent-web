@@ -1,0 +1,265 @@
+/* About Section */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid var(--color-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    /* 정사각형 비율 유지 및 내용 중앙 정렬 */
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 폰트 명시적 적용 */
+    font-family: 'Omyu Pretty', 'Noto Sans KR', sans-serif;
+}
+
+.feature-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.2);
+    border-color: var(--color-primary);
+}
+
+.feature-icon {
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.feature-item p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.feature-link {
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.feature-link:hover {
+    border-color: var(--color-secondary);
+    background: linear-gradient(135deg, rgba(255, 217, 61, 0.1), rgba(255, 107, 157, 0.1));
+    border: 2px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+
+.feature-link h4 {
+    color: var(--color-primary);
+}
+
+/* Classes Section (Review Banners) */
+.review-banners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    /* 전체 너비를 줄여서 배너 크기 축소 */
+}
+
+.review-banner-item {
+    text-align: center;
+    padding: 1.5rem;
+    /* 패딩 축소 */
+    background: white;
+    border-radius: 12px;
+    border: 2px solid var(--color-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    /* 정사각형 비율 유지 및 내용 중앙 정렬 */
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 폰트 명시적 적용 */
+    font-family: 'Omyu Pretty', 'Noto Sans KR', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.review-banner-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.2);
+    border-color: var(--color-primary);
+    background: linear-gradient(135deg, rgba(255, 217, 61, 0.1), rgba(255, 107, 157, 0.1));
+}
+
+.review-banner-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+/* About Section */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid var(--color-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    /* 정사각형 비율 유지 및 내용 중앙 정렬 */
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 폰트 명시적 적용 */
+    font-family: 'Omyu Pretty', 'Noto Sans KR', sans-serif;
+}
+
+.feature-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.2);
+    border-color: var(--color-primary);
+}
+
+.feature-icon {
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.feature-item p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.feature-link {
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.feature-link:hover {
+    border-color: var(--color-secondary);
+    background: linear-gradient(135deg, rgba(255, 217, 61, 0.1), rgba(255, 107, 157, 0.1));
+    border: 2px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+
+.feature-link h4 {
+    color: var(--color-primary);
+}
+
+/* Classes Section (Review Banners) */
+.review-banners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    /* 전체 너비를 줄여서 배너 크기 축소 */
+}
+
+.review-banner-item {
+    text-align: center;
+    padding: 1.5rem;
+    /* 패딩 축소 */
+    background: white;
+    border-radius: 12px;
+    border: 2px solid var(--color-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    /* 정사각형 비율 유지 및 내용 중앙 정렬 */
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 폰트 명시적 적용 */
+    font-family: 'Omyu Pretty', 'Noto Sans KR', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.review-banner-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.2);
+    border-color: var(--color-primary);
+    background: linear-gradient(135deg, rgba(255, 217, 61, 0.1), rgba(255, 107, 157, 0.1));
+}
+
+.review-banner-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.review-banner-item p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+}
